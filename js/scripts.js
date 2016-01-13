@@ -5,22 +5,25 @@ $(document).ready(function() {
 
     var results = ("");
     if (gender === 'male' && age <= 50) {
-      results = Amy Poehler;
+      results = "Amy Poehler";
     }
     else if (gender === "male" && age > 50) {
-      results = Helen Mirren;
+      results = "Helen Mirren";
     }
     else if (gender === "female" && age <=50) {
-      results = Adam Scott;
+      results = "Adam Scott";
     }
 
     else if (gender === "female" && age > 50) {
-      results = Dustin Hoffman;
+      results = "Dustin Hoffman";
     }
 
     else {
       alert('Please enter your age.');
     }
+
+    $("#match").text(results);
+    $("#results").show();
 
     event.preventDefault();
   });
